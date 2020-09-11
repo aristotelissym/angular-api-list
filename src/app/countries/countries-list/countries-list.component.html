@@ -1,0 +1,18 @@
+<div class="container-fluid bg-3 text-center" id="countryContainer">    
+    <br>
+    <div class="row" id="rowCountry">
+      <div class="col-sm-3" *ngFor="let country of countries">
+        <div class="card" style="width: 18rem;">
+            <img class="img-thumbnail" src="{{country.flag}}" alt="Responsive image">
+            <div class="card-body">
+            <h5 class="card-title" id="countryName">{{country.name}}</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Capital: {{country.capital}}</li>
+                <li class="list-group-item">Region: {{country.region}}</li>
+            </ul>
+            </div>
+      </div>
+    </div>
+</div><br>
+
+

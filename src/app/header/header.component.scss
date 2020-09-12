@@ -27,6 +27,8 @@
 .header a.active {
   background-color: dodgerblue;
   color: white;
+  position: static;
+  margin-right: 0.2cm;
 }
 
 /* Float the link section to the right */

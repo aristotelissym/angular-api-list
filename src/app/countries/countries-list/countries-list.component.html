@@ -2,8 +2,10 @@
     <br>
     <div class="row" id="rowCountry">
       <div class="col-sm-3" *ngFor="let country of countries">
-        <div class="card" style="width: 18rem;">
-            <img class="img-thumbnail" src="{{country.flag}}" alt="Responsive image">
+        <div class="card" style="width: 18rem;" data-toggle="tooltip" title="{{country.nativeName}}">
+          <a href="https://en.wikipedia.org/wiki/{{country.name}}" target="_blank">
+            <img class="img-thumbnail" src="{{country.flag}}" alt="Responsive image" id="countryFlag">
+          </a>
             <div class="card-body">
             <h5 class="card-title" id="countryName">{{country.name}}</h5>
             <ul class="list-group list-group-flush">
@@ -14,5 +16,4 @@
       </div>
     </div>
 </div><br>
-
 

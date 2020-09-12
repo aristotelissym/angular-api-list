@@ -1,9 +1,18 @@
 #countryContainer {
     position: relative;
-    margin-left: 70px;
+    margin-left: 4%;
     
 }
 
 #rowCountry {
     position: relative;;
 }
+
+#countryFlag:hover {
+    background-color: rgb(116, 192, 255);
+    transform: scale(1.1);
+    transition: transform .2s;
+    margin: 0 auto;
+    display: block;
+}
+
